@@ -157,6 +157,20 @@ else {return (
   `The number ${number} is odd!`)
 }
 }
-console.log(isEven(4))
-console.log(isEven(7))
+console.log(isEven(687))
+console.log(isEven(10))
 console.log(isEven(0))
+
+
+
+
+
+
+function celsiusToFahrenheit (celsius){
+{return (
+  `The temperature is ${celsius* 1.8 + 32}°F!`)
+}
+}
+console.log(celsiusToFahrenheit(0));
+console.log(celsiusToFahrenheit(25));
+console.log(celsiusToFahrenheit(-10));
