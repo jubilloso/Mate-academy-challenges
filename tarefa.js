@@ -174,3 +174,30 @@ function celsiusToFahrenheit (celsius){
 console.log(celsiusToFahrenheit(0));
 console.log(celsiusToFahrenheit(25));
 console.log(celsiusToFahrenheit(-10));
+
+
+
+
+ function getSum (numbers){
+let sum = 0;
+
+for(let number of numbers) {
+ sum += number
+}
+return sum
+}
+
+console.log(getSum([15,20,15]));
+
+
+function getSumPhrase (numbers){
+let sum = 0;
+for( let number of numbers){
+  sum += number
+}
+return (
+  `The sum of [${numbers}] is ${sum}`)
+}
+
+
+console.log(getSumPhrase([15,20,839,1000]));
