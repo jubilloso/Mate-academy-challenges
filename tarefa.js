@@ -133,6 +133,30 @@ else {
 }
 }
 console.log(isString('José Lucas'))
-console.log(isString('Victória'))
+console.log(isString('Victóriass222'))
 
 
+function isNumber (value) {
+ if (typeof value === 'number'){
+return (`The value ${value} is a number!`)
+ }
+else {
+  return ('the value is not a number')
+}
+}
+console.log(isNumber('ABCDEFG'));
+console.log(isNumber(2331))
+
+
+
+function isEven (number){
+if (number % 2 === 0){
+  return (`The number ${number} is even!`)
+}
+else {return (
+  `The number ${number} is odd!`)
+}
+}
+console.log(isEven(4))
+console.log(isEven(7))
+console.log(isEven(0))
