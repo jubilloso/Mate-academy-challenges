@@ -9,7 +9,7 @@ function greeter (hora){
 }
   console.log(greeter(15));
 
-
+/* ------------------------------------------------------------------------*/
   function factorial (h){
     let fact = 1;
     for(let i = h; i >= 1; i--){
@@ -19,7 +19,7 @@ function greeter (hora){
 }
   console.log (factorial(5));
 
-
+/* ------------------------------------------------------------------------*/
 function greetIfRetired  (age){
     if (age >=65){
         return('Have a nice day!')
@@ -33,7 +33,7 @@ function greetIfRetired  (age){
   }
   console.log(printOddOrEven(5));
 
-
+/* ------------------------------------------------------------------------*/
 
   function checkWordLength(word) {
   if (word.length < 5 ) {
@@ -44,7 +44,7 @@ function greetIfRetired  (age){
   }
 }
 console.log(checkWordLength('José Está Fazendo Live'))
-
+/* ------------------------------------------------------------------------*/
 
 function canBuyBeer (age){
         if (age < 18) {
@@ -55,7 +55,7 @@ function canBuyBeer (age){
     }
 }
 console.log(canBuyBeer(26))
-
+/* ------------------------------------------------------------------------*/
 function getTipsRating (amount){
  if (amount > 50){
     return ('excellent')
@@ -73,7 +73,7 @@ else {return ('terrible')
 }
 } 
 console.log(getTipsRating(50))
-
+/* ------------------------------------------------------------------------*/
 
 function calculateDiscount (price){
     if (price > 100 ) {
@@ -86,7 +86,7 @@ function calculateDiscount (price){
 console.log(calculateDiscount(150))
 
 
-
+/* ------------------------------------------------------------------------*/
 function sumUpTo (n){
    let amount = 0;
    for(let i = n; i >=1; i--){
@@ -96,7 +96,7 @@ function sumUpTo (n){
 }
      console.log(sumUpTo(5))
 
-
+/* ------------------------------------------------------------------------*/
 function convertTemperature  (temp, scale){
    if (scale === 'c') {return (
     `The temperature in Fahrenheit is ${temp * 1.8 + 32}!`)
@@ -109,7 +109,7 @@ function convertTemperature  (temp, scale){
   }
 }
 console.log(convertTemperature('22','c'))
-
+/* ------------------------------------------------------------------------*/
 
 function getSum (numbers){
  let sum = 0;
@@ -121,7 +121,7 @@ function getSum (numbers){
 }
 console.log(getSum([14,26]))
 
-
+// ------------------------------------------------------------------------
 function isString (value){
 if (typeof value === 'string'){ 
   return ( 
@@ -134,7 +134,7 @@ else {
 }
 console.log(isString('José Lucas'))
 console.log(isString('Victóriass222'))
-
+// ------------------------------------------------------------------------
 
 function isNumber (value) {
  if (typeof value === 'number'){
@@ -147,7 +147,7 @@ else {
 console.log(isNumber('ABCDEFG'));
 console.log(isNumber(2331))
 
-
+// ------------------------------------------------------------------------
 
 function isEven (number){
 if (number % 2 === 0){
@@ -163,7 +163,7 @@ console.log(isEven(0))
 
 
 
-
+// ------------------------------------------------------------------------
 
 
 function celsiusToFahrenheit (celsius){
@@ -176,7 +176,7 @@ console.log(celsiusToFahrenheit(25));
 console.log(celsiusToFahrenheit(-10));
 
 
-
+// ------------------------------------------------------------------------
 
  function getSum (numbers){
 let sum = 0;
@@ -188,7 +188,7 @@ return sum
 }
 
 console.log(getSum([15,20,15]));
-
+// ------------------------------------------------------------------------
 
 function getSumPhrase (numbers){
 let sum = 0;
@@ -201,7 +201,7 @@ return (
 
 
 console.log(getSumPhrase([15,20,839,1000]));
-
+// ------------------------------------------------------------------------
 
 function hasPart (partList, targetPart){
   for (const part of partList) {
@@ -215,7 +215,7 @@ return (`Has on stock? false`)
 const estoqueCivic = [ 'amortecedor', 'radiador']
 
 console.log(hasPart(estoqueCivic, 'radiador'))
-
+// ------------------------------------------------------------------------
 
 function calculatePrice (originalPrice, condition){
   if (condition === 'ruim'){
@@ -227,4 +227,4 @@ function calculatePrice (originalPrice, condition){
     )
    }
 }
-console.log(calculatePrice(15000, 'ruim'))
+console.log(calculatePrice(15000, 'bom'))
