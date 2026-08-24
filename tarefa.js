@@ -206,12 +206,25 @@ console.log(getSumPhrase([15,20,839,1000]));
 function hasPart (partList, targetPart){
   for (const part of partList) {
   if (part === targetPart){
-    return true
+    return (`Has on stock? true`);
   }
 }
-return false
+return (`Has on stock? false`)
 }
   
 const estoqueCivic = [ 'amortecedor', 'radiador']
 
-console.log(hasPart(estoqueCivic, 'cama'))
+console.log(hasPart(estoqueCivic, 'radiador'))
+
+
+function calculatePrice (originalPrice, condition){
+  if (condition === 'ruim'){
+  return (`Bad condition  with discount is:  ${originalPrice - 3000}`)
+}
+  if (condition === 'bom') {
+    return (
+      `condition is good so price ir real fair ${originalPrice}`
+    )
+   }
+}
+console.log(calculatePrice(15000, 'ruim'))
