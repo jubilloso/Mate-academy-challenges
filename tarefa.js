@@ -201,3 +201,17 @@ return (
 
 
 console.log(getSumPhrase([15,20,839,1000]));
+
+
+function hasPart (partList, targetPart){
+  for (const part of partList) {
+  if (part === targetPart){
+    return true
+  }
+}
+return false
+}
+  
+const estoqueCivic = [ 'amortecedor', 'radiador']
+
+console.log(hasPart(estoqueCivic, 'cama'))
