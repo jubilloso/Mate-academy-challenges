@@ -228,3 +228,6 @@ function calculatePrice (originalPrice, condition){
    }
 }
 console.log(calculatePrice(15000, 'bom'))
+
+
+

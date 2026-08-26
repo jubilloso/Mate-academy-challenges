@@ -13,3 +13,5 @@ try {
 } catch (error) {
   console.log('🚨 MODO ESTRITO ATIVO: O código quebrou com sucesso!');
 }
+
+
