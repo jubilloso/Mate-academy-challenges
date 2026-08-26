@@ -230,4 +230,9 @@ function calculatePrice (originalPrice, condition){
 console.log(calculatePrice(15000, 'bom'))
 
 
-
+function totalWheigth (series, repeticoes, peso){
+  let totalVolume= 0;
+  totalVolume = series * repeticoes * peso
+  return (` O monstro de Varzea Nova moveu um total de ${totalVolume}kg de aço nesse exercicio! 🏋️‍♂️💪`);
+}
+console.log(totalWheigth(2,12,130));
