@@ -229,10 +229,34 @@ function calculatePrice (originalPrice, condition){
 }
 console.log(calculatePrice(15000, 'bom'))
 
-
+//-------------------------------------------------------------------
 function totalWheigth (series, repeticoes, peso){
   let totalVolume= 0;
   totalVolume = series * repeticoes * peso
   return (` O monstro de Varzea Nova moveu um total de ${totalVolume}kg de aço nesse exercicio! 🏋️‍♂️💪`);
 }
 console.log(totalWheigth(2,12,130));
+//-------------------------------------------------------------
+
+function calcularCargaTotal(series,reps,carga){
+let total = series * reps * carga
+return(
+  `Você moveu um total de ${total} nesse exercício!`)
+}
+console.log(calcularCargaTotal(2,10,130));
+//-------------------------------------------------------------
+const exercicioIsolado = {
+   nome: 'Rosca direta',
+   series: 3,
+   carga: 15
+  };
+  console.log(exercicioIsolado.carga);
+//-------------------------------------------------------------
+const meusHalteres = [10, 15, 20,30]
+for (let halterAtual of meusHalteres){
+  {console.log(halterAtual)}
+}
+
+
+
+
