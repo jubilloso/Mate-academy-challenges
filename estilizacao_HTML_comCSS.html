@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://jsdelivr.net">
+
+
+<style>
+body {
+    background-color: black; /* Garante que o fundo geral seja preto */
+    margin: 0;               /* Remove as margens em branco dos lados e do topo */
+    padding: 0;
+    min-height: 100vh;    
+}
+
+#container {
+    text-align: center;
+    background-color: black;
+     width: 960px;
+    margin: 0 auto;
+    padding: 100px;
+    min-height: 100vh; 
+     box-sizing: border-box;   /*Impede que o padding crie barras de rolagem erradas*/
+}
+.titleDefinition { 
+        color: red;
+         font-size: 54px;
+   
+            }
+.linksDefinitions {
+    color: white;
+    font-size: 24px;
+
+}
+.subtitle {
+    color: grey;
+    font-size: 34px;
+    font-weight: bold;
+
+}
+.lista-botoes{  /* 1. Remove as bolinhas pretas e espaços extras da lista */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+.lista-botoes li {
+    margin-bottom: 15px;
+}
+.botao-link{
+    display: block;            /* Faz o botão ocupar a largura da caixa */
+    background-color: #dc3545; /* Cor de fundo (Vermelho para combinar com seu título) */
+    color: white;              /* Cor do texto dentro do botão */
+    text-decoration: none;     /* Remove o sublinhado padrão de link */
+    padding: 12px 20px;        /* Espaço interno para dar corpo ao botão */
+    border-radius: 8px;        /* Deixa as bordas arredondadas */
+    font-size: 18px;           /* Tamanho da letra */
+    font-weight: bold;         /* Texto em negrito */
+    text-align: center;        /* Centraliza o texto dentro do botão */
+    transition: 0.3s;          /* Faz a mudança de cor ser suave (efeito câmera lenta) */
+}
+ .botao-link:hover {
+    background-color: #212529; /* O fundo muda para cinza escuro/preto */
+    color: #ffffff;            /* Mantém o texto branco (ou mude se quiser) */
+    transform: scale(1.02);    /* Opcional: faz o botão crescer de leve ao passar o mouse */
+}
+.botao-link .bi {
+    margin-right: 10px;
+    font-size: 20px; /* Opcional: deixa o ícone um pouquinho maior que o texto */
+    vertical-align: middle; /* Alinha o ícone perfeitamente com a altura do texto */
+}
+.icone-local {
+    width: 24px;            /* Define a largura ideal do ícone */
+    height: 24px;           /* Define a altura ideal do ícone */
+    margin-right: 10px;     /* Afasta o ícone do texto */
+    vertical-align: middle; /* Alinha o ícone perfeitamente na linha do texto */
+    object-fit: contain;    /* Garante que a imagem não fique distorcida ou esticada */
+    object-fit: cover; 
+    border-radius: 50%;
+}
+.foto-perfil {
+    width: 250px;           /* Define a largura da foto */
+    height: 350px;          /* Define a altura idêntica para manter um quadrado perfeito */
+    object-fit: cover;      /* Garante que a foto não fique esticada ou distorcida */
+        /* Transforma o quadrado em um círculo perfeito */
+    margin-top: 40px;       /* Cria um espaço seguro entre o último botão e a foto */
+    border: 3px solid red;  /* Opcional: cria uma borda vermelha combinando com seu título */
+    display: inline-block;  /* Garante o alinhamento centralizado com o text-align do container */
+}
+</style>
+</head>
+
+<body>
+
+    <div id="container">
+   <h1 class="titleDefinition">José Lucas Links:</h1>
+   
+   <p class="subtitle">Acesse tudo</p>
+   
+    <ul class="lista-botoes">                                
+      <li>
+         <a href="https://www.instagram.com/joslucasalmeida/" class="botao-link">
+         <img src="instalogo.png"class="icone-local" alt="GItHub">Instagram
+        </a>
+    </li> 
+    <li>
+        <a href="https://github.com/jubilloso" class="botao-link">
+           <img src="gitlogo.png"class="icone-local" alt="GItHub">GitHub
+        </a>
+    </li> 
+      
+    <li>
+        <a href="https://www.youtube.com/@joslucasalmeida" class="botao-link">
+            <img src="youtubelogo.png"class="icone-local" alt="YouTube">YouTube
+
+        </a>
+        </li> 
+  </ul>
+            <img src="Mybacks2.jpg" class="foto-perfil" alt="Foto de José Lucas">
+
+</div>
+</body>
+</html>
