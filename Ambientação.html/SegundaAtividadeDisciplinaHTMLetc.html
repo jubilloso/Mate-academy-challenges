@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTf-8">
+<title>Alterador de cores</title>
+<style>
+body{
+font-family: 'Sege UI', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+margin: 0;
+background-color: #ffffff;
+transition: backgorund-color 0.5 ease; /*efeito suave, troca de cor*/
+}
+button{
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <burron onclick="mudarCor()">Mudar Cor de Fundo</burron>
+
+<script>
+function mudarCor(){
+const cores = ["#FF5733", "#33FF57", "#3357FF", "#F3FF33", "#9B59B6", "#1ABC9c"];
+
+const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+  document.body.style.backgroundColor = corAleatoria;
+}
+</script>
+</body>
+</html>

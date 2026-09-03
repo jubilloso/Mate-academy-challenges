@@ -20,12 +20,30 @@ let caloriaPorGrama = 0;
 }
 
 let prato = [ { nome: 'carne', gramas: 100 }, { nome: 'arroz', gramas: 0 },{nome: 'batata', gramas: 0}];
-let totalCaloriasAlmoco =0;
-for(const alimento of prato ) 
-totalCaloriasAlmoco += calcularCalorias(alimento.nome, alimento.gramas);
+let totalCaloriasAlmoco = prato.reduce((acumulador, alimentoDaVez)=>{
+
+return acumulador + calcularCalorias(alimentoDaVez.nome, alimentoDaVez.gramas)
 
 
-console.log(`O total do prato combinado deu: ${totalCaloriasAlmoco} calorias! 🥩🍚`);
+}, 0);
+
+console.log(totalCaloriasAlmoco);
+
+
+
+
+
+
+
+
+
+
+//for(const alimento of prato ) 
+//totalCaloriasAlmoco += calcularCalorias(alimento.nome, alimento.gramas);
+
+
+//console.log(`O total do prato combinado deu: ${totalCaloriasAlmoco} calorias! 🥩🍚`);/* 
+
 
 
 

@@ -20,4 +20,5 @@ function calculateCalories (alimento, gramas){
     for (let i = 0; i < dish.length; i++){
     totalCaloriesLunch += calculateCalories (dish[i].nome, dish[i].gramas);
     
-}  console.log(`The total number of calories in your lunch is: ${totalCaloriesLunch} kcal`);
+}  
+console.log(`The total number of calories in your lunch is: ${totalCaloriesLunch} kcal`);

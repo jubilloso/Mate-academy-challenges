@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+<head>
+<meta charset="UTF-8">
+<title>Contador Simples</title>
+<style>
+  body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin-top: 100px;
+}  
+  #numero {
+   font-size: 64px;
+   margin: 20px;
+   font-weight: bold;
+}
+ .btn{
+ padding: 10px 20px;
+ font-size: 20px;
+ margin: 5px;
+}
+</style>
+</head>
+<body>
+   <h1>Contador Interativo</h1>
+   <div id="numero">0</div>
+
+   
+    <button class="btn" onclick="diminuir()">- Diminuir</button>
+    <button class="btn" onclick="aumentar()">+ Aumentar</button>
+<script>
+let contagem = 0;
+function aumentar(){
+contagem ++;
+document.getElementById("numero").innerText = contagem;
+}
+ function diminuir(){
+contagem --;
+document.getElementById("numero").innerText = contagem;
+}
+
+</script>
+</body>
+</html>
