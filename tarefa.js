@@ -257,6 +257,8 @@ for (let halterAtual of meusHalteres){
   {console.log(halterAtual)}
 }
 
+let nome = "Marina"
+console.log(`Olá, ${nome}! Seu ambiente está funcionando` )
 
 
 
