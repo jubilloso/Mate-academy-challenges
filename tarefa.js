@@ -256,9 +256,26 @@ const meusHalteres = [10, 15, 20,30]
 for (let halterAtual of meusHalteres){
   {console.log(halterAtual)}
 }
+//-------------------------------------------------------------
+const input = '0'
 
-let nome = "Marina"
-console.log(`Olá, ${nome}! Seu ambiente está funcionando` )
+if (+input) {
+  console.log('OK')
+}
+ else {
+  console.log('Erro')
+ }
+
+//----------
+
+const innput = '0'
+
+if (!isNaN(innput)) {
+  console.log('OKk')
+}
+ else {
+  console.log('Erro')
+ }
 
 
 
