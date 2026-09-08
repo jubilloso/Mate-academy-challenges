@@ -278,4 +278,78 @@ if (!isNaN(innput)) {
  }
 
 
+ //-----------
 
+ function isEven(number) {
+  if (number % 2 === 0){
+    return(true)
+  }
+  else {
+    return(false)
+  }
+
+}
+
+/*Declare variáveis e atribua números em diferentes sistemas numéricos a elas:
+
+A variável myBin deve ser um valor binário, equivalente a 10 no sistema decimal.
+A variável myOct deve ser um valor octal, equivalente a 20 no sistema decimal.
+A variável myDec deve ser um valor decimal 30.
+A variável myHex deve ser um valor hexadecimal, equivalente a 40 no sistema decimal.*/
+let myBin = 0b1010;
+
+let myOct = 0o24;
+
+let myDec = 30;
+
+
+let myHex = 0x28;
+
+
+
+
+function factor (h){
+let fact = 1;
+for (let i = h; i>= 1; i--){
+  fact *= i;
+}
+return fact;
+}
+console.log(factor(5));
+
+
+/*Crie uma função getCentury que analise um (year) e retorne o século para ele.
+
+Notas:
+
+a cronologia começa no ano 1 DC, portanto 0 deve ser processado como o 1º ano;
+1800 deve ser processado como século XVIII, 1801 - como século XIX.
+Por exemplo:
+
+getCentury(2001) === 21
+getCentury(0) === 1
+getCentury(1786) === 18
+getCentury(1500) === 15*/
+
+
+function getCentury (year){
+  let anoDoTexto = year.toString();
+  
+
+  if (
+    anoDoTexto[2] === "0" && anoDoTexto[3] === "0" ) {
+    return parseInt(anoDoTexto.slice(0, 2)); // o .slice vai "retornar a partir do 0 e vai excluir tudo o que estiver antes do 2"
+ }
+if  (
+    anoDoTexto[2] !== "0" || anoDoTexto[3] !== "0" ) 
+  {
+    return parseInt(anoDoTexto.slice(0, 2)) + 1;
+  } 
+else (
+    anoDoTexto.length == [1] || anoDoTexto.length == [2] )  
+    return parseInt(anoDoTexto.slice(0, 2)) 1;
+  }
+
+
+
+console.log(getCentury(2));   
