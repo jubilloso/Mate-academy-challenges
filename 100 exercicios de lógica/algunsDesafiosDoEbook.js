@@ -47,3 +47,5 @@ return (`O dobro de ${numero} é: ${dobro}. O triplo de ${numero} é: ${triplo}.
 console.log(dobroTriploMetadetarefa5(8))
 console.log(dobroTriploMetadetarefa5(2.5))
 console.log(dobroTriploMetadetarefa5(-4))
+
+// Tarefa 4 Dobro, triplo e metade

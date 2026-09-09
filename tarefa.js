@@ -335,21 +335,44 @@ getCentury(1500) === 15*/
 function getCentury (year){
   let anoDoTexto = year.toString();
   
-
-  if (
-    anoDoTexto[2] === "0" && anoDoTexto[3] === "0" ) {
+   if (anoDoTexto.length <= 2) { // aqui se o ano tiver dois ou menos caracteres, retonará século 1
+    return 1
+   }
+  else if (
+    anoDoTexto.length === 3 && anoDoTexto[1] === "0"  && anoDoTexto[2] === "0" )  {
+      return parseInt(anoDoTexto.slice(0, 1));
+    }
+  else if (
+    anoDoTexto.length === 3 && anoDoTexto[1] !== "0"  && anoDoTexto[2] !== "0" )  {
+      return parseInt(anoDoTexto.slice(0, 1)) +1;
+    }
+   
+   
+   
+   else if ( 
+    anoDoTexto.length === 4  && anoDoTexto[2] === "0" && anoDoTexto[3] === "0" ) {
     return parseInt(anoDoTexto.slice(0, 2)); // o .slice vai "retornar a partir do 0 e vai excluir tudo o que estiver antes do 2"
  }
-if  (
-    anoDoTexto[2] !== "0" || anoDoTexto[3] !== "0" ) 
+else if  (
+      anoDoTexto.length === 4  && anoDoTexto[2] !== "0" || anoDoTexto[3] !== "0" ) 
   {
     return parseInt(anoDoTexto.slice(0, 2)) + 1;
   } 
-else (
-    anoDoTexto.length == [1] || anoDoTexto.length == [2] )  
-    return parseInt(anoDoTexto.slice(0, 2)) 1;
+  
+  else if ( 
+    anoDoTexto.length === 5  && anoDoTexto[3] === "0" && anoDoTexto[4] === "0" ) {
+    return parseInt(anoDoTexto.slice(0, 3)); // o .slice vai "retornar a partir do 0 e vai excluir tudo o que estiver antes do 2"
+ }
+else if  (
+      anoDoTexto.length === 4  && anoDoTexto[3] !== "0" || anoDoTexto[4] !== "0" ) 
+  {
+    return parseInt(anoDoTexto.slice(0, 3)) + 1;
+  }  
+
   }
 
 
 
-console.log(getCentury(2));   
+console.log(getCentury(40029));   
+
+
