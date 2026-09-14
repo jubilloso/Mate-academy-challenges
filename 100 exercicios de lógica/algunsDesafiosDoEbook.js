@@ -33,7 +33,9 @@ function AntecessorSucessorTarefa4 (numero){
 let antecessor = numero - 1;
 let sucessor = numero + 1;
 return (`O antecessor de ${numero} é: (${antecessor}) E o sucessor de ${numero} é: (${sucessor}) `)
+
 }
+
 console.log(AntecessorSucessorTarefa4(20));
 
 // Tarefa 3 Antecessor e Sucessor
@@ -45,7 +47,29 @@ let metade = numero / 2;
 return (`O dobro de ${numero} é: ${dobro}. O triplo de ${numero} é: ${triplo}. a metade de ${numero} é: ${metade}.`)
 }
 console.log(dobroTriploMetadetarefa5(8))
-console.log(dobroTriploMetadetarefa5(2.5))
-console.log(dobroTriploMetadetarefa5(-4))
+
 
 // Tarefa 4 Dobro, triplo e metade
+
+function convertMedidas (metros, tipo){
+  
+if  (tipo === 'Centímetros' || tipo === 'centimetros' ) { 
+ return (`O valor de ${metros} (metros) em centímetros é ${metros * 100 }`);
+}
+
+if  (tipo === 'Milímetros' ||  tipo === 'milimetros' ) { 
+    return (`O valor de ${metros} (metros) em milímetros é ${metros * 1000} `);
+  }
+if (tipo == 'Todos' || tipo == 'todos') {
+    return (`O valor de (${metros} Metros) em Centímetros é: (${ metros * 100}). E o valor de (${metros} Metros) em Milímetos é: (${metros * 1000})`)
+}
+
+
+  if (tipo !== 'Centímetros' || tipo !== 'Milímetros' || tipo !== 'todos') {
+     return (`Defina o valor entre Centímetros, Milímetros ou Todos`)
+}
+}
+
+console.log(convertMedidas(12.3,'todos'));
+
+// Tarefa 5 Converter metros
