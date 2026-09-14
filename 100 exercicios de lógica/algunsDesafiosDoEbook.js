@@ -64,11 +64,9 @@ if (tipo == 'Todos' || tipo == 'todos') {
     return (`O valor de (${metros} Metros) em Centímetros é: (${ metros * 100}). E o valor de (${metros} Metros) em Milímetos é: (${metros * 1000})`)
 }
 
+ return (`Defina o valor entre Centímetros, Milímetros ou Todos`)
+}
 
-  if (tipo !== 'Centímetros' || tipo !== 'Milímetros' || tipo !== 'todos') {
-     return (`Defina o valor entre Centímetros, Milímetros ou Todos`)
-}
-}
 
 console.log(convertMedidas(12.3,'todos'));
 
