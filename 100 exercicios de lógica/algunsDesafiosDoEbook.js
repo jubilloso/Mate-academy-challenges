@@ -71,3 +71,26 @@ if (tipo == 'Todos' || tipo == 'todos') {
 console.log(convertMedidas(12.3,'todos'));
 
 // Tarefa 5 Converter metros
+
+function AreaPerimetroRetangulo (largura,altura){
+const area = largura * altura;
+const perimetro = 2 * (largura + altura)
+
+ if ( typeof largura !== 'number' && typeof altura !== 'number')  {  //primeiro vê os erros
+   return (`Defina a largura e a altura do seu retângulo com números válidos!`)
+ }
+if ( typeof largura === 'number' && typeof altura !== 'number')  {
+   return (`Você definiu largura como ${largura} mas falta definir a Altura! (ou digitar um número)!`)
+}
+if ( typeof largura !== 'number' && typeof altura == 'number')  {
+   return (`Você definiu altura como ${altura} mas falta definir a Largura! (ou digitar um número)!`)
+}
+if (typeof largura === 'number' && typeof altura === 'number') {
+    return (`A área do seu retângulo é: ${area}. E o Perímetro do seu retângulo é: ${perimetro}`)
+}
+
+}
+console.log(AreaPerimetroRetangulo(4,4))
+
+
+
