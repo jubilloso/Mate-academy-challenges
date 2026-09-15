@@ -376,3 +376,29 @@ else if  (
 console.log(getCentury(40029));   
 
 
+/*De vez em quando a Mate Academy organiza uma festa de networking para novos alunos, graduados e aqueles que querem começar a estudar conosco.
+
+Às vezes tudo dá errado e os locais onde as festas seriam realizadas ficam de quarentena. 
+Mas pode ser apenas uma vez por ano e apenas no início. E claro, faremos a primeira festa assim que possível.
+
+Crie uma função countNetworking que receba dois parâmetros: a duração da quarentena quarantineLength em meses e uma frequência de festas 
+(1 festa por meses de frequência).
+
+Retorne o número de festas que a Mate Academy irá organizar durante um ano.*/
+
+function countNetworking(quarantineLength, frequency) {
+
+  let year = 12;
+   if (quarantineLength === 0)
+{ year = year }
+  
+   if (quarantineLength >= 1)
+{  year = year - quarantineLength
+
+}
+return Math.round(year / frequency)
+
+}
+ 
+
+console.log(countNetworking(0,6))
