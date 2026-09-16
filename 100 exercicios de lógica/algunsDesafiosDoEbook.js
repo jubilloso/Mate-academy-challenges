@@ -135,3 +135,12 @@ return(`Your new salary with Salary adjustment is ${oldSalary + growUp} `)
 console.log(newSalary(1200))
 
 //tarefa Reajuste salarial +15%
+
+function salaryPlusCommission (salary,totalSales){
+
+let totalComission = totalSales / 100 * 4;
+return ( `You salary + total commisions is ${salary + totalComission}`)
+
+
+}
+console.log(salaryPlusCommission(2500,20000));
