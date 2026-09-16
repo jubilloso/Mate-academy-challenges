@@ -1,0 +1,75 @@
+<!DOCTYPE html
+<html lang="pt-br">
+<head>
+        <style>
+      body{
+        background-color:black;
+      }
+      .titulo{
+        text-align:center;
+        font-family:'Times New Roman', Times, serif;
+        color:white;
+      }
+.form{
+    background-color:rgb(204, 51, 51);
+    position:static;
+    color:white;
+    width: 80%;
+    padding:20px;
+    top:30%;
+    left: 35%;
+}
+      
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale-1.0>
+    <title> Primeiro formulário HTML</title>
+</head>
+<body>
+    <h1 class="titulo" >Primeiro fomulário</h1>
+     <form action="/Testando-primeiro-formulário" method="post">
+<fieldset class="form">
+          <legend>Dados Gerais</legend>
+          <label for="nome">Nome:</label>
+         <input type="text" minlength="3" id="nome">
+         <label for="data_nascimento">Data de nascimento</label>
+         <input type="text" id="data_nascimento"/>
+         <label for="cpf">CPF</label>
+         <input type="text" minlength="13" id="cpf" >
+</fieldset>
+<fieldset class="form">
+             <legend>Endereço</legend>
+             <label for="tipo_endereco">Tipo</label>
+             <select id="tipo_endereco">
+             <option value=" ">Rua</option>
+             <option value=" ">Estrada</option>
+             <option value=" ">Rodovia</option>
+             <option value=" ">Outros</option>
+             </select>
+             <label for="logradouro_endereço">Logradouro</label>
+             <input type="text" id="logradouro_endereço"/>
+             <label for="numero_endereco">Número:</label>
+             <input type="text" id="numero_endereco"/>
+             <label for="complemento_endereco">Complemento</label>
+             <input type="text" id="complemento_endereco"/>
+</fieldset>
+<fieldset class="form">
+         <legend>Fale conosco</legend>
+         <label for="msg">Mensagem</label>
+         <textarea type="text" id="msg">
+         </textarea>
+</fieldset>
+<fieldset class="form">
+         <button type="submit">Enviar sua Mensagem</button>
+        <button type="submit">Limpar o Formulário</button>
+</fieldset>
+
+
+
+<scripit>
+ </scripit>   
+</body>
+</html>
+
+
+

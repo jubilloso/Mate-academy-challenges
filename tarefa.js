@@ -396,9 +396,19 @@ function countNetworking(quarantineLength, frequency) {
 {  year = year - quarantineLength
 
 }
-return Math.round(year / frequency)
-
+return Math.ceil(year / frequency)  //   Math.ceil: arredonda para cime && Math.round Arredonda para o inteiro mais próximo
+ 
 }
  
 
 console.log(countNetworking(0,6))
+
+
+function getCenturyy(year) {
+  if (year === 0) {
+    return 1;
+  }
+
+  return Math.ceil(year / 100);
+};
+console.log(getCenturyy(2026))
