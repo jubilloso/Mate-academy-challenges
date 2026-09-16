@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+ <style>
+ html, body{
+        background-color:#3D2314;
+        height: 100%;
+        margin: 10;
+         display: flex;
+        flex-direction: column; /* Coloca um elemento embaixo do outro */
+        align-items: center;    /* Centraliza todos milimetricamente na horizontal */
+        gap: 20px; 
+      }
+      .titulo{
+
+        text-align:center;
+        font-family: "Georgia", "Times New Roman", serif; 
+        color: #D4AF37;
+        text-transform:uppercase;
+        letter-spacing:10;
+        border-bottom:solid;
+        padding-bottom: 10px;
+      }
+.form{
+      width: 450px; /* O fieldset vai usar o tamanho total do formulário */
+       box-sizing: border-box; 
+      padding: 15px;
+  background-color: #020100;
+  color: white;
+    background-color:#020100;
+         
+    color:white;
+    
+}
+
+fundo{
+  background-color:rgb(102, 87, 87);
+}
+
+
+
+
+</style>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converta anos em séculos</title>
+    <script src="scriptCalcularSeculo.js" defer></script>
+
+  </head>
+<body>
+ 
+    <h1 class="titulo" >Calculadora de Séculos</h1>
+     <form id="meuFormulario" style="width: 442px;">
+  <fieldset class="form">
+          <legend>Calculadora</legend>
+          <label for="ano">Digite o ano:</label>
+           <input type="text" minlength="1" id="ano">
+        <button style="margin-left: 9%;"  type="submit" id="btn-converter">Converter ano</button>
+</fieldset>
+   <!-- PBotao para ação -->
+    
+<!-- Tabela para aparecer resultado Js -->
+  <table border="1" style="color: white; border-collapse: collapse; width: 450px; text-align: center;">
+ <thead>
+      <tr style="background-color: #f34141; color: #3D2314;">
+        <th colspan="2">Informação</th>
+         <th>Valor</th>
+        </tr>
+     </thead>
+ <tbody>
+    <tr>
+        <td colspan="2">Século correspondente:</td>
+     <!-- É aqui, nesta célula com o ID abaixo, que 
+                 o JavaScript vai injetar o resultado -->
+        <td id="celula-resultado">-</td>
+   </tr>
+ </tbody>
+  </table>
+  
+</body>
+
+</body>
+</html>
