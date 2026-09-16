@@ -412,3 +412,63 @@ console.log(countNetworking(0,6))
   return Math.ceil(year / 100);
 };
 console.log(getCenturyy(2026)) solução do mentor para converter anos em séculos*/
+
+
+/*Hoje é um dia bom para um piquenique. Um grupo de amigos decidiu ir para o bosque e relaxar.
+ Quando eles chegaram, descobriram que tinham muito pouco combustível. Há duas opções:
+
+Ligar para um amigo e pedir que ele traga combustível.
+Ir sozinho ao posto de gasolina mais próximo.
+Conhecendo a quantidade de fuelRemaining, a distance em quilômetros até o posto de gasolina mais próximo e o fuelConsumption por 100km, podemos ajudar 
+as pessoas a tomar uma decisão com a função makeDecision.*/
+
+function makeDecision(fuelRemaining, distance, fuelConsumption) {
+  
+  
+  if(fuelRemaining < 0 || distance < 0 || fuelConsumption <0){
+  return('please, enter the valid data')
+}
+if ( fuelRemaining === 0){
+  return (
+    'ask for help')
+}
+if (fuelConsumption === 0){
+  return(
+    'please, enter the valid data')
+}
+
+if(fuelRemaining >= fuelConsumption){
+  return(
+    `reach gas station by themselves`)
+}
+if(fuelRemaining  < 0){
+  return('please, enter the valid data')
+}
+if(fuelRemaining <= distance && fuelConsumption  >= fuelRemaining ){
+  return(
+    `aaaaaaaaaaaaaaaaaaaaaaaaaaa`)
+}
+if(fuelRemaining <= distance){
+  return(
+    `ask for help`)
+}
+if(fuelRemaining <= distance && fuelRemaining > fuelConsumption  ){
+  return(
+    `reach gas station by themselves`)
+}
+
+
+
+if(fuelRemaining < distance && fuelRemaining < fuelConsumption ){
+  return(
+   `reach gas station by themselves`)
+
+
+}
+
+
+}
+
+
+console.log(makeDecision(15,28,0))
+// 1l is enougth to 12,5km
