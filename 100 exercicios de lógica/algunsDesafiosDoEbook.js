@@ -92,5 +92,31 @@ if (typeof largura === 'number' && typeof altura === 'number') {
 }
 console.log(AreaPerimetroRetangulo(4,4))
 
+//tarefa 6 Área e perímetro do retângulo 
+
+function celciusToFahrenheit (celcius){
+    return (`${(celcius * 9) / 5 + 32}`)
+       
 
 
+
+}
+console.log(celciusToFahrenheit(-40))
+
+
+//tarefa 7 Área e perímetro do retângulo  Celsius para Fahrenheit
+
+function calculateDiscont (initialPrice){
+
+ let lesTen = initialPrice / 10;
+
+
+if(initialPrice > 0){
+return (`Your 10% discount of ${initialPrice} is ${initialPrice - lesTen}!` )
+}
+if(initialPrice == 0){
+    return('Digit a price')
+}
+
+}
+console.log(calculateDiscont(1000))

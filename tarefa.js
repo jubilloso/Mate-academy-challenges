@@ -83,7 +83,7 @@ function calculateDiscount (price){
     return (price)
    }
 }
-console.log(calculateDiscount(150))
+console.log(calculateDiscount(200))
 
 
 /* ------------------------------------------------------------------------*/
@@ -404,11 +404,11 @@ return Math.ceil(year / frequency)  //   Math.ceil: arredonda para cime && Math.
 console.log(countNetworking(0,6))
 
 
-function getCenturyy(year) {
+/*function getCenturyy(year) {
   if (year === 0) {
     return 1;
   }
 
   return Math.ceil(year / 100);
 };
-console.log(getCenturyy(2026))
+console.log(getCenturyy(2026)) solução do mentor para converter anos em séculos*/
