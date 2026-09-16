@@ -104,7 +104,7 @@ function celciusToFahrenheit (celcius){
 console.log(celciusToFahrenheit(-40))
 
 
-//tarefa 7 Área e perímetro do retângulo  Celsius para Fahrenheit
+//tarefa 7 Celsius para Fahrenheit
 
 function calculateDiscont (initialPrice){
 
@@ -120,3 +120,18 @@ if(initialPrice == 0){
 
 }
 console.log(calculateDiscont(1000))
+
+
+//tarefa 8 10% de disconto
+
+function newSalary (oldSalary){
+
+    let growUp = (oldSalary / 100) * 15;
+return(`Your new salary with Salary adjustment is ${oldSalary + growUp} `)
+
+
+
+}
+console.log(newSalary(1200))
+
+//tarefa Reajuste salarial +15%
