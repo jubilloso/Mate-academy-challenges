@@ -423,52 +423,49 @@ Conhecendo a quantidade de fuelRemaining, a distance em quilômetros até o post
 as pessoas a tomar uma decisão com a função makeDecision.*/
 
 function makeDecision(fuelRemaining, distance, fuelConsumption) {
-  
-  
-  if(fuelRemaining < 0 || distance < 0 || fuelConsumption <0){
+  const distanciaPossivel = (fuelRemaining / fuelConsumption) * 100;
+
+ if(fuelRemaining < 0 || distance < 0 || fuelConsumption <=0){
   return('please, enter the valid data')
-}
-if ( fuelRemaining === 0){
-  return (
-    'ask for help')
-}
-if (fuelConsumption === 0){
-  return(
-    'please, enter the valid data')
-}
+  
+   }
+ if (distanciaPossivel < distance){
+    return('ask for help')
+  } 
 
-if(fuelRemaining >= fuelConsumption){
-  return(
-    `reach gas station by themselves`)
+  if (distanciaPossivel >= distance){
+    return('reach gas station by themselves')
+  } 
+   
 }
-if(fuelRemaining  < 0){
-  return('please, enter the valid data')
-}
-if(fuelRemaining <= distance && fuelConsumption  >= fuelRemaining ){
-  return(
-    `aaaaaaaaaaaaaaaaaaaaaaaaaaa`)
-}
-if(fuelRemaining <= distance){
-  return(
-    `ask for help`)
-}
-if(fuelRemaining <= distance && fuelRemaining > fuelConsumption  ){
-  return(
-    `reach gas station by themselves`)
-}
-
-
-
-if(fuelRemaining < distance && fuelRemaining < fuelConsumption ){
-  return(
-   `reach gas station by themselves`)
-
-
-}
-
-
-}
-
-
+  
 console.log(makeDecision(15,28,0))
 // 1l is enougth to 12,5km
+
+
+
+/*Os funcionários da Mate Exchange estão cansados de converter moeda de hryvnia para uma moeda escolhida usando uma calculadora.
+
+Escreva uma função convertCurrency que receberá amount em euros, exchangeRate (a taxa de câmbio, o custo de 1 euro na moeda especificada), 
+e currencyName - o nome da moeda desejada. Se amount e exchangeRate forem positivos, a função deve retornar a string Give them {{x}} {{currencyName}}(s).
+ Caso contrário, retorne a string Enter valid data.
+
+Se o resultado não for um número inteiro, arredonde o valor para duas casas decimais.*/
+
+function convertCurrency(amount, exchangeRate, currencyName) {
+  
+if (amount <= 0 && exchangeRate <= 0){
+  return('Enter valid data')
+}
+  let valor = amount * exchangeRate;
+  const formatado = valor.toFixed(2);
+ 
+return (`Give them ${+formatado} ${currencyName}(s)`)
+}
+
+
+
+console.log(convertCurrency(1000, 0.037, 'dollar'))
+
+
+
