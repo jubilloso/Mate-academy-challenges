@@ -194,7 +194,8 @@ console.log(positiveOrNegative(0))
 // Challleng 2: Ever or odd
 
 function evenOrOdd(number) {
-  if (number % 2 === 0){
+  
+    if (number % 2 === 0){
     return(`This number is even`)
   }
   else {
@@ -202,3 +203,19 @@ function evenOrOdd(number) {
   }
 }
 console.log(evenOrOdd(-8))
+
+//////////////////////
+// Challleng 3: whats is Bigger number
+
+function whatsBigger (A,B){
+if (A === B){
+    return (`Equal values`)
+}
+if (A > B){
+    return (`${A}`)
+}
+else return (`${B}`)
+
+}
+
+console.log(whatsBigger(9,9))

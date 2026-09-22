@@ -460,7 +460,7 @@ if (amount <= 0 && exchangeRate <= 0){
   let valor = amount * exchangeRate;
   const formatado = valor.toFixed(2);
  
-return (`Give them ${+formatado} ${currencyName}(s)`)
+return (`Give them ${+formatado} ${currencyName}(s)`) // Esse "+" aprendi que dá para usar tirando os zeros desnecessários
 }
 
 
