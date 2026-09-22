@@ -146,3 +146,9 @@ return ( `You salary + total commisions is ${salary + totalComission}`)
 console.log(salaryPlusCommission(2500,20000));
 
 //tarefa 10: salaryPlusCommission
+
+function changeValues (a,b){
+return (`A : ${b} B: ${a} `)
+
+}
+console.log(changeValues(4,9))
