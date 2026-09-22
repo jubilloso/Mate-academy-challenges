@@ -148,7 +148,43 @@ console.log(salaryPlusCommission(2500,20000));
 //tarefa 10: salaryPlusCommission
 
 function changeValues (a,b){
-return (`A : ${b} B: ${a} `)
+
+
+    return (`A : ${b} B: ${a} `)
 
 }
 console.log(changeValues(4,9))
+
+
+//tarefa 14: Change values (A & B) to (B & A)
+
+function finalCoust (value,amount,freight){
+
+let subTotal = value * amount;
+let total = subTotal + freight;
+return (`Unit price '${value}' x Amount '${amount}' + freight '${freight}' = $${total}  `)
+
+}
+console.log(finalCoust(10,3,5))
+
+
+//tarefa 15: Calculate subtotal 
+
+
+// Conditional estructures exercirces 
+
+// Challleng 1: Positive, negative or zero
+
+function positiveOrNegative (number){
+
+if (number === 0){
+    return ('This number is Zero')
+}
+ if (number > 0){
+    return ('This number is positive')
+}
+if (number < 0 ){
+    return ('This number is negative')
+}
+}
+console.log(positiveOrNegative(0))
