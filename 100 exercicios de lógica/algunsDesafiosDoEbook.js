@@ -188,3 +188,17 @@ if (number < 0 ){
 }
 }
 console.log(positiveOrNegative(0))
+
+/////////////////////////////////
+
+// Challleng 2: Ever or odd
+
+function evenOrOdd(number) {
+  if (number % 2 === 0){
+    return(`This number is even`)
+  }
+  else {
+    return(`This number is odd`)
+  }
+}
+console.log(evenOrOdd(-8))
