@@ -2,23 +2,24 @@
 int main (){
 
 float salario, maiorSalario, somaSalarial, mediaSalarial;
-int cont;
+int cont, totalDeFuncionarios;
     maiorSalario = 0;
     somaSalarial = 0;
-
-  for (cont = 1; cont <= 10; cont++){
+      printf("Quantos funcionários tem na empresa?");
+        scanf("%d",&totalDeFuncionarios);
+ for (cont = 1; cont <= totalDeFuncionarios; cont++){
      printf("\nDigite seu salário: ");
-     scanf("%f",&salario);
+     scanf("%f", &salario);
        somaSalarial = somaSalarial + salario;
          if (salario > maiorSalario){
             maiorSalario = salario;
          }
 
 } 
-             mediaSalarial= somaSalarial /10 /*Aqui depende da quantidade de salários que serão contados*/; 
-               printf("O maior salário da empresa é = %.2f", maiorSalario); 
-                 printf("\nA média salarial da empresa é = %.2f",mediaSalarial);
-    return 0;
+     mediaSalarial= somaSalarial /(float)totalDeFuncionarios ; /*Aqui depende da quantidade de salários que serão contados*/
+    printf("O maior salário da empresa é = %.2f", maiorSalario); 
+    printf("\nA média salarial da empresa é = %.2f",mediaSalarial);
+return 0;
 
 
 }
