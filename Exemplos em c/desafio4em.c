@@ -1,8 +1,11 @@
 #include <stdio.h>
 int main (){
-int cont;
+int cont,quantidadeDeAlunos;
 float nota1, nota2,media, nota3;
-  for ( cont = 1; cont <= 3; cont++)  {
+ 
+ printf("Digite a quantidade de alunos:");
+ scanf("%d",&quantidadeDeAlunos);
+   for ( cont = 1; cont <= quantidadeDeAlunos; cont++)  {
     printf("\nDigite a primeira nota :"); 
      scanf("%f",&nota1);
         printf("\nDigite a segunda nota:");
