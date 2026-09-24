@@ -20,3 +20,5 @@ float nota1, nota2,media, nota3;
   }
  return 0;
   }
+
+  
