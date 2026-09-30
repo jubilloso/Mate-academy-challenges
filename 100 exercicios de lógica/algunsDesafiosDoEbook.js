@@ -219,3 +219,17 @@ else return (`${B}`)
 }
 
 console.log(whatsBigger(9,9))
+
+//////////
+// Challleng 4: whats is Bigger than 3 numbers
+
+function biggerThan3 (a,b,c){
+let bigger =  a < infinity || b + 1 ||  c + 1;
+
+return ()
+
+
+
+
+
+}

@@ -1,19 +1,25 @@
 #include <stdio.h>
 int main (){
-int cont;
-float nota1, nota2,media, nota3;
-  for ( cont = 1; cont <= 3; cont++)  {
-    printf("\nDigite a primeira nota :"); 
-     scanf("%f",&nota1);
-        printf("\nDigite a segunda nota:");
-         scanf("%f",&nota2);
-            printf("\nDigite a terceira nota:");
-             scanf("%f",&nota3);
-        media = (nota1 + nota2 + nota3) / 3;
-    if (media >= 7){
-    printf("\nAluno foi aprovado com a media: %.1f",media);
-  }
-  else printf ("\nO aluno foi reprovado com a media: %.1f",media);
-  }
- return 0;
-  }
+
+float salario, maiorSalario, somaSalarial, mediaSalarial;
+int cont, totalDeFuncionarios;
+    maiorSalario = 0;
+    somaSalarial = 0;
+      printf("Quantos funcionários tem na empresa?");
+        scanf("%d",&totalDeFuncionarios);
+ for (cont = 1; cont <= totalDeFuncionarios; cont++){
+     printf("\nDigite seu salário: ");
+     scanf("%f", &salario);
+       somaSalarial = somaSalarial + salario;
+         if (salario > maiorSalario){
+            maiorSalario = salario;
+         }
+
+} 
+     mediaSalarial= somaSalarial /(float)totalDeFuncionarios ; /*Aqui depende da quantidade de salários que serão contados*/
+    printf("O maior salário da empresa é = %.2f", maiorSalario); 
+    printf("\nA média salarial da empresa é = %.2f",mediaSalarial);
+return 0;
+
+
+}

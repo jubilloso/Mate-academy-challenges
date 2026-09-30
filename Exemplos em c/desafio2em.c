@@ -10,11 +10,12 @@ int main()
          {
             printf("\nDigite um numero:");
               scanf("%d",&num);
-              if (num > maior){
-           maior = num;
+              if (num > maior)
+              {
+                  maior = num;
               }  
         }
-printf("O maior dos numeros lidos = %d\n",maior);
-return 0;
+  printf("O maior dos numeros lidos = %d\n",maior);
+   return 0;
 }
 

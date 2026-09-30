@@ -23,7 +23,7 @@ printf("Media do aluno %d = %.1f\n",i,media);
 }
     mediaTotal = somaMedias / 3;
     printf("\n==============================");
-    printf("\nMEDIA GERAL DA TURAMA = %d\n",i);
+    printf("\nMEDIA GERAL DA TURAMA = %.1f\n",mediaTotal);
     printf("\n==============================");
 
      return 0;
