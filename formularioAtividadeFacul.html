@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lag="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário HTML EXERCÍCIO FACULDADE</title>
+</head>
+<style>
+ .titulo-centralizado { 
+    text-align:center;
+ }
+.formulario-centralizazdo{
+    text-align:center;
+}
+</style>
+<body>
+    
+     <h1 class="titulo-centralizado">Aqui é um formulário que foi solicitado como exercício</h1>
+ <fieldset class=".formulario-centralizazdo">
+     <legend> Dados gerais</legend>
+         <label for="nome">Nome:</label>
+          <input type="text" minlength="3" name="nome"required/>
+             
+          <label for="email">E-mail:</label>
+            <input type="e-mail" id="email" required>
+               
+             <label for="telefone">Telefone de contato</label>
+             <input type="tel" 
+                       id="telefone" 
+                         name="telefone" 
+                           placeholder="(11) 99999-9999" 
+                            pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                             required>
+             <label for="dt_nascimento">Data de nascimento:</label>
+             <input type="date" id="dt_nascimento" required>
+               
+             <legend>Fale conosco:</legend>
+            <textarea name="msg" cols="30" rows="4"></textarea>
+              <input type="submit" value="enviar">
+             <br>
+             
+   </fieldset>
+
+
+
+              
+
+       
+
+</body>
+
+</html>
