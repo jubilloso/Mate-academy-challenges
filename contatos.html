@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteakClub - Contato</title>
+    <style>
+        .titulo-centralizado { text-align: center; color: rgb(230, 230, 233); }
+        .menu-navegacao { color: white; list-style-type: none; padding: 0; display: flex; gap: 20px; justify-content: center; }
+        .menu-navegacao a { color: #00ffff; text-decoration: none; font-weight: bold; }
+        .conteudo { color: white; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        
+        .campo-formulario { margin-bottom: 15px; }
+        .campo-formulario label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .campo-formulario input, .campo-formulario textarea {
+            width: 100%; max-width: 400px; padding: 8px; border-radius: 4px;
+            border: 1px solid #44444c; background-color: white; color: black;
+        }
+        .botao-enviar {
+            background-color: #ff4545; color: white; padding: 10px 20px;
+            border: none; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%;
+        }
+        .botao-enviar:hover { background-color: #cc2c2c; }
+    </style>
+</head>
+<body style="background-color: rgb(45, 45, 53);">
+
+    <h1 class="titulo-centralizado">🥩 Contrate o Rodízio na sua Casa</h1>
+    
+    <nav>
+        <ul class="menu-navegacao">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Nossos Cortes</a></li>
+            <li><a href="sobre.html">Nossa Filosofia</a></li>
+            <li><a href="contato.html">Chame o Churrasqueiro</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <div class="conteudo">
+        <h2>Faça seu cadastro para não ficar de fora do próximo churrasco</h2>
+        
+        <form style="width: 100%; max-width: 450px; margin-top: 20px;">
+            <fieldset style="color: white; border: 1px solid #ff4545; padding: 20px; border-radius: 8px;">
+                <legend style="color: #00ffff; padding: 0 10px; font-weight: bold;">Ficha do Carnívoro</legend>
+                
+                <div class="campo-formulario">
+                    <label for="nome">Seu Nome (ou apelido de churrasco):</label>
+                    <input type="text" minlength="3" id="nome" placeholder="Ex: Zeca do Espetinho" required>
+                </div>
+                     
+                <div class="campo-formulario">
+                    <label for="email">E-mail para receber spam de promoção:</label>
+                    <input type="email" id="email" placeholder="Ex: picanha@gmail.com" required>
+                </div>
+                       
+                <div class="campo-formulario">
+                    <label for="telefone">Telefone (para ligarmos se a carne acabar):</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="dt_nascimento">Data que você começou a comer carne:</label>
+                    <input type="date" id="dt_nascimento" required>
+                </div>
+                       
+                <div class="campo-formulario">
+                    <label for="msg">Quantos KG você aguenta comer sozinhos?</label>
+                    <textarea id="msg" name="msg" rows="3" placeholder="Escreva aqui se você prefere mal passada, ao ponto ou carvão..."></textarea>
+                </div>
+                
+                <input type="submit" class="botao-enviar" value="Me bota na lista de convidados!">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

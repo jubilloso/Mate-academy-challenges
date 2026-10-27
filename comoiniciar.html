@@ -55,7 +55,8 @@
   
   
  <form action="/pagina-processa-dados-do-form" method="post">
-    <fieldset>
+    
+  <fieldset>
       <legend> Dados gerais</legend>
          <label for="nome">Nome:</label>
           <input type="text" minlength="3"
@@ -64,8 +65,9 @@
           <input type="text" minlength="10" id="data_nascimento"/>
          <label for="Cpf">CPF</label>
       <input type="cpf" minlength="11" id="cpf"/>       
-     </fieldset>
-  <fieldset>
+  </fieldset>
+  
+ <fieldset>
       <legend>Endereço</legend>
         <label for="tipo_endereco">Tipo</label>
           <select id="tipo_endereco">
@@ -80,7 +82,8 @@
          <input type="text" id="numero_endereco"/>
        <label for="complemento_endereco">Complemento:</label>
      <input type="text" id="complemento_endereco"/>
-   </fieldset>
+  </fieldset>
+
   <fieldset>
     <legend>Fale conosco</legend>
      <label for="msg">Mensagem</label>
@@ -91,6 +94,7 @@
      <button type="submit">Enviar sua mensagem</button>
        <button type="reset">Limpar o formulário</button>
   </fieldset>
+  
  </form>
 </body>
 </html>
